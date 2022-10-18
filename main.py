@@ -4,15 +4,21 @@ numbers = [     [99, 11, 66, 86, 55],
                [33, 77, 32, 33, 34]]
 
 
-rnum = len(numbers)
+rownum = len(numbers)
+for i in range(rownum):
+    cnum = len(numbers[i])
+    rowsum = 0
+    for j in range(rownum):
+       # print (numbers[i][j], end = " ")
+        rowsum =+ numbers[i][j]
+print (numbers[i][j], end = " ")
+
 cnum = len(numbers[0])
-
-print ('Sum of rows: ', end=' ')
-for i in range(rnum):
-	rsum = sum(numbers[i])
-	print (rsum, end=' ')
-print()
-
-# ******************************
-# Make your Code
-# ******************************
+for i in range(cnum):
+    colsum = 0
+    for j in range(rownum):
+        colsum =+ numbers[j][i]
+    
+for i in range(rownum):
+    rowsum = sum(numbers[i])
+print (numbers[j][i], end = " ")
